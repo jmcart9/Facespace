@@ -2,3 +2,15 @@
 .classpath
 .project
 .setting/
+
+# Compiled class files
+*.class
+
+# Java build artifacts
+bin/
+*.jar
+!Facespace.jar
+
+# IDE files
+.idea/
+*.iml

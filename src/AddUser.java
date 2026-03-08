@@ -13,21 +13,19 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 
-public class adduser extends JDialog {
+public class AddUser extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
-	
-	menu y = new menu();
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		try {
-			adduser dialog = new adduser();
+			adduser dialog = new AddUser();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -38,7 +36,7 @@ public class adduser extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public adduser() {
+	public AddUser() {
 		setBounds(100, 100, 636, 556);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -108,7 +106,6 @@ public class adduser extends JDialog {
 				cancelButton.addMouseListener(new MouseAdapter() {
 					@Override
 					public void mouseClicked(MouseEvent arg0) {
-						//dispose();
 						setVisible(false);
 					}
 				});

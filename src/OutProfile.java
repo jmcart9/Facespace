@@ -23,14 +23,7 @@ public class OutProfile extends JDialog {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		/*
-		try {
-			dialog2.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog2.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		*/
+
 	}
 
 	/**

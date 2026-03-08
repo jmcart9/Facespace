@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 
-public class menu extends JDialog{
+public class Menu extends JDialog{
 
 	private JFrame frame;
 	private final Action action = new SwingAction();
@@ -30,14 +30,7 @@ public class menu extends JDialog{
 	private JTextField textField_2;
 	
 	private JTextField textField1;
-	
-	static menu dialog = new menu();
-	static menu dialog2 = new menu();
-	
-	
-	
-	//public String[] args = {};
-	
+
 	public FacespaceStuff x = new FacespaceStuff();
 
 	/**
@@ -47,7 +40,7 @@ public class menu extends JDialog{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					menu window = new menu();
+					menu window = new Menu();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -59,7 +52,7 @@ public class menu extends JDialog{
 	/**
 	 * Create the application.
 	 */
-	public menu() {
+	public Menu() {
 		initialize();
 		setBounds(100, 100, 636, 556);
 		getContentPane().setLayout(new BorderLayout());
@@ -140,7 +133,7 @@ public class menu extends JDialog{
 		}
 	}
 		//
-		public menu(int y){
+		public Menu(int y){
 		initialize();
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
